@@ -9,7 +9,7 @@ namespace StrafStreamSafety.Patches
         [HarmonyPatch("Start")]
         static void Start()
         {
-            if (!Plugin.instance.cfg.USE_PROXY) return;
+            if (!Plugin.instance.cfg.USE_PROXY || Plugin.instance.cfg.DISABLE_CHAT) return;
             Plugin.instance.proxyChatWriter.LaunchProxyChat();
         }
     }

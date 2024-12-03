@@ -17,7 +17,6 @@ public class ProxyChatWriter
     {
         try
         {
-            UnityEngine.Debug.Log(Process.GetCurrentProcess().Id.ToString());
             proxyProcess = new Process();
             proxyProcess.StartInfo.FileName = filePath;
             proxyProcess.StartInfo.RedirectStandardInput = true;

@@ -13,7 +13,7 @@ namespace StrafStreamSafety.Patches
         [HarmonyPatch("StartDuration")]
         static void CensorChat(MatchChatLine __instance)
         {
-            __instance.transform.GetChild(0).gameObject.SetActive(false);
+            __instance.transform.GetChild(0).gameObject.SetActive(!Plugin.instance.cfg.REMOVE_ICONS);
             Type instanceType = __instance.GetType();
 
             FieldInfo nameLineField = instanceType.GetField("nameLine", BindingFlags.NonPublic | BindingFlags.Instance);
