@@ -1,0 +1,37 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.1</TargetFramework>
+    <Nullable>enable</Nullable>
+	<UseWindowsForms>true</UseWindowsForms>
+	<LangVersion>9.0</LangVersion>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Reference Include="0Harmony">
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\STRAFTAT\BepInEx\core\0Harmony.dll</HintPath>
+    </Reference>
+    <Reference Include="Assembly-CSharp">
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\STRAFTAT\STRAFTAT_Data\Managed\Assembly-CSharp.dll</HintPath>
+    </Reference>
+    <Reference Include="BepInEx">
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\STRAFTAT\BepInEx\core\BepInEx.dll</HintPath>
+    </Reference>
+    <Reference Include="Heathen.Steamworks">
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\STRAFTAT\STRAFTAT_Data\Managed\Heathen.Steamworks.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.TextMeshPro">
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\STRAFTAT\STRAFTAT_Data\Managed\Unity.TextMeshPro.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine">
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\STRAFTAT\STRAFTAT_Data\Managed\UnityEngine.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.CoreModule">
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\STRAFTAT\STRAFTAT_Data\Managed\UnityEngine.CoreModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UI">
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\STRAFTAT\STRAFTAT_Data\Managed\UnityEngine.UI.dll</HintPath>
+	</Reference>
+  </ItemGroup>
+
+</Project>
