@@ -1,13 +1,15 @@
 ﻿using BepInEx;
 using HarmonyLib;
 using StrafStreamSafety.Config;
-using System;
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.IO;
 using System.Reflection;
 using System.Text.RegularExpressions;
-using System.Threading.Tasks;
+using ComputerysModdingUtilities;
+
+
+[assembly: StraftatMod(isVanillaCompatible: true)]
 
 namespace StrafStreamSafety
 {
